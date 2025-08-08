@@ -72,16 +72,41 @@ class _HomePageState extends State<HomePage> {
       'image': 'assets/6.jpeg',
       'buttonText': 'Conócenos',
     },
+
     {
-      'title': 'Nuestras Publicaciones',
-      'description': 'Accede a nuestros informes, estudios y análisis sobre transparencia, rendición de cuentas y buen gobierno.',
-      'image': 'assets/1.jpeg',
-      'buttonText': 'Ver publicaciones',
+      'title': 'Participa con Nosotros',
+      'description': 'Únete a nuestra red de voluntarios o colabora con nuestras iniciativas para promover la transparencia.',
+      'image': 'assets/mmm.png',
+      'buttonText': 'Contáctanos',
     },
     {
       'title': 'Participa con Nosotros',
       'description': 'Únete a nuestra red de voluntarios o colabora con nuestras iniciativas para promover la transparencia.',
-      'image': 'assets/2.jpeg',
+      'image': 'assets/cccc.png',
+      'buttonText': 'Contáctanos',
+    },
+    {
+      'title': 'Participa con Nosotros',
+      'description': 'Únete a nuestra red de voluntarios o colabora con nuestras iniciativas para promover la transparencia.',
+      'image': 'assets/dddd.png',
+      'buttonText': 'Contáctanos',
+    },
+    {
+      'title': 'Participa con Nosotros',
+      'description': 'Únete a nuestra red de voluntarios o colabora con nuestras iniciativas para promover la transparencia.',
+      'image': 'assets/resumen1.jpeg',
+      'buttonText': 'Contáctanos',
+    },
+    {
+      'title': 'Participa con Nosotros',
+      'description': 'Únete a nuestra red de voluntarios o colabora con nuestras iniciativas para promover la transparencia.',
+      'image': 'assets/resumen2.jpeg',
+      'buttonText': 'Contáctanos',
+    },
+    {
+      'title': 'Participa con Nosotros',
+      'description': 'Únete a nuestra red de voluntarios o colabora con nuestras iniciativas para promover la transparencia.',
+      'image': 'assets/resumen3.jpeg',
       'buttonText': 'Contáctanos',
     },
   ];
@@ -128,6 +153,16 @@ class _HomePageState extends State<HomePage> {
       'titulo': 'Reconocimiento a mejor portal de transparencia',
       'resumen': 'Premiación anual a las instituciones con mejores prácticas en publicación de información pública.',
     },
+    {
+      'fecha': '10 Marzo, 2024',
+      'titulo': 'Reconocimiento a mejor portal de transparencia',
+      'resumen': 'Premiación anual a las instituciones con mejores prácticas en publicación de información pública.',
+    },
+    {
+      'fecha': '10 Marzo, 2024',
+      'titulo': 'Reconocimiento a mejor portal de transparencia',
+      'resumen': 'Premiación anual a las instituciones con mejores prácticas en publicación de información pública.',
+    },
   ];
 
   final List<Map<String, dynamic>> _publicaciones = [
@@ -158,6 +193,48 @@ class _HomePageState extends State<HomePage> {
       'categoria': 'Estudios',
       'imagen': 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       'resumen': 'Evaluación comparativa de los portales de transparencia de los gobiernos locales.',
+    },
+    {
+      'titulo': 'Informe Anual de Transparencia 2023',
+      'fecha': '15 Marzo, 2024',
+      'categoria': 'Informes',
+      'imagen': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      'resumen': 'Análisis comparativo del nivel de transparencia en las instituciones públicas nacionales.',
+    },
+    {
+      'titulo': 'Informe Anual de Transparencia 2023',
+      'fecha': '15 Marzo, 2024',
+      'categoria': 'Informes',
+      'imagen': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      'resumen': 'Análisis comparativo del nivel de transparencia en las instituciones públicas nacionales.',
+    },
+    {
+      'titulo': 'Guía de Acceso a la Información Pública',
+      'fecha': '28 Febrero, 2024',
+      'categoria': 'Guías',
+      'imagen': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      'resumen': 'Manual práctico para ejercer el derecho de acceso a la información en instituciones públicas.',
+    },
+    {
+      'titulo': 'Estudio: Transparencia Municipal',
+      'fecha': '10 Enero, 2024',
+      'categoria': 'Estudios',
+      'imagen': 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      'resumen': 'Evaluación comparativa de los portales de transparencia de los gobiernos locales.',
+    },
+    {
+      'titulo': 'Estudio: Transparencia Municipal',
+      'fecha': '10 Enero, 2024',
+      'categoria': 'Estudios',
+      'imagen': 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      'resumen': 'Evaluación comparativa de los portales de transparencia de los gobiernos locales.',
+    },
+    {
+      'titulo': 'Informe Anual de Transparencia 2023',
+      'fecha': '15 Marzo, 2024',
+      'categoria': 'Informes',
+      'imagen': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      'resumen': 'Análisis comparativo del nivel de transparencia en las instituciones públicas nacionales.',
     },
   ];
 
@@ -259,6 +336,7 @@ class _HomePageState extends State<HomePage> {
                                 // Sección Somos ONT
                                 //MissionVisionSection(),
                                 SectionVisionMission(key: MissionKey),
+                                SizedBox(height: 10,),
                                 // Sección Publicaciones
                                 SectionPublications(publicaciones: _publicaciones,key: publicacionesKey,),
                                 // Sección Gestión
@@ -267,18 +345,73 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           // Aside
-                          const SizedBox(width: 20),
-                          AsideWidget(noticias: _noticias),
+                          //const SizedBox(width: 20),
+                          //AsideWidget(noticias: _noticias),
                         ],
                       ),
                     )
                 ),
+
                 SliverToBoxAdapter(
-                  child:  GestionCarousel( items: _gestionItems),
+                  child: Container(
+                    color: const Color(0xFF2c3e50),//Color.fromARGB(0, 85, 116, 140),//const Color(0xFF2c3e50), // 🔵 Fondo azul oscuro aplicado a todo el bloque
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        GestionCarousel(items: _gestionItems),
+
+                        SizedBox(height: MediaQuery.of(context).size.height * 0.08),
+                        Divider(
+                          color: Color(0x1AFFFFFF),
+                          height: 40,
+                        ),
+                        Container(
+                          height: MediaQuery.of(context).size.height * 0.08,
+                          width: MediaQuery.of(context).size.width,
+                          decoration: BoxDecoration(
+                           // color: Colors.white,
+                            image: const DecorationImage(
+                              image: AssetImage('assets/Banner_instituciones.png'),
+                              fit: BoxFit.fill,
+                            ),
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                        ),
+                        Divider(
+                          color: Color(0x1AFFFFFF),
+                          height: 40,
+                        ),
+                        SizedBox(height: MediaQuery.of(context).size.height * 0.08),
+                        CustomFooter(),
+                      ],
+                    ),
+                  ),
+                ),
+
+
+                /*SliverToBoxAdapter(
+                  child:  Container(
+                      color: const Color(0xFF2c3e50),
+                      child: GestionCarousel( items: _gestionItems)),
                 ),
                 SliverToBoxAdapter(
-                  child: CustomFooter(),
-                )
+                  child:  Container(
+                    height: MediaQuery.of(context).size.height * 0.08,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: const BoxDecoration(
+                     // color:Colors.white,// Color(0xFF2c3e50),
+                      image: DecorationImage(
+                        image: AssetImage('assets/Banner_instituciones.png'),
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                ),
+                SliverToBoxAdapter(
+                  child: Container(
+                      color: const Color(0xFF2c3e50),
+                      child: CustomFooter()),
+                )*/
               ]
           ),
           //aqui el nav
@@ -410,7 +543,7 @@ class WidgetHeader extends StatelessWidget {
         opacity: _showNavBar ? 0.0 : 1.0,
         duration: const Duration(milliseconds: 300),
         child: Container(
-          height: MediaQuery.of(context).size.height * 0.07,
+          height: MediaQuery.of(context).size.height * 0.1,
           width: MediaQuery.of(context).size.width,
           decoration: const BoxDecoration(
             image: DecorationImage(

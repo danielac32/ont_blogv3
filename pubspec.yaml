@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  carousel_slider: ^5.1.1
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +52,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  fonts:
+    - family: 'poppins'
+      fonts:
+        - asset: assets/fonts/Poppins-Black.ttf
   assets:
     - assets/1.jpeg
     - assets/2.jpeg
@@ -72,6 +77,29 @@ flutter:
     - assets/resumen4.jpeg
     - assets/banner_inf.jpg
     - assets/bk_bottom.jpg
+    - assets/niko.jpg
+    - assets/images.jpeg
+    - assets/cccc.png
+    - assets/dddd.png
+    - assets/mmm.png
+    - assets/Banner_instituciones.png
+    - assets/Banner_instituciones2.png
+    - assets/Banner_instituciones3.png
+    - assets/Banner_instituciones4.png
+    - assets/quienes/misi.png
+    - assets/quienes/obje.png
+    - assets/quienes/valores.png
+    - assets/quienes/visi.png
+    - assets/quienes/MISION_POPPINS.png
+    - assets/quienes/OBJ_ESPE_POPPINS.png
+    - assets/quienes/OBJ_GENE_POPPINS.png
+    - assets/quienes/VISION_POPPINS.png
+    - assets/quienes2/ESPE1.png
+    - assets/quienes2/ESPE2.png
+    - assets/quienes2/ESPE3.png
+    - assets/quienes2/MI1.png
+    - assets/quienes2/OBJGE1.png
+    - assets/quienes2/VI1.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

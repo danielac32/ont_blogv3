@@ -8,10 +8,12 @@ class CustomFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFF2c3e50),
-      padding: const EdgeInsets.all(40),
+     // color: const Color(0xFF2c3e50),
+      //padding: const EdgeInsets.all(40),
+      padding: const EdgeInsets.fromLTRB(40, 24, 40, 24),
       child: Column(
         children: [
+          //SizedBox(height: 100,),
           _FooterGrid(),
           const _FooterDivider(),
           const _CopyrightText(),
@@ -33,6 +35,7 @@ class _FooterGrid extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       crossAxisSpacing: 20,
+      mainAxisSpacing: 8,
       childAspectRatio: _getChildAspectRatio(context),
       children: const [
         _OntInfoColumn(),
@@ -123,9 +126,9 @@ class _ContactColumn extends StatelessWidget {
     return _FooterColumn(
       title: 'Contacto',
       children: const [
-        Text('Av. Transparencia 123, Lima', style: _footerTextStyle),
-        Text('info@ont.org.pe', style: _footerTextStyle),
-        Text('(01) 234-5678', style: _footerTextStyle),
+        //Text('Av. Tran', style: _footerTextStyle),
+        Text('info@ont.gob.ve', style: _footerTextStyle),
+        Text('(0212) 234-5678', style: _footerTextStyle),
         Text('Lunes a Viernes: 9am - 5pm', style: _footerTextStyle),
       ],
     );
@@ -231,7 +234,8 @@ class _FooterDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Divider(
       color: Color(0x1AFFFFFF),
-      height: 40,
+      height: 24,
+      thickness: 1,
     );
   }
 }
@@ -242,7 +246,7 @@ class _CopyrightText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      '© 2024 ONT - Organización Nacional de Transparencia. Todos los derechos reservados.',
+      '© 2024 ONT - Oficina Nacional del Tesoro',
       style: TextStyle(
         color: Color(0xFFbdc3c7),
         fontSize: 12,

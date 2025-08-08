@@ -18,17 +18,22 @@ class AsideWidget extends StatelessWidget {
       child: Column(
         children: [
           // Noticias
-          AsideSection(
-            title: 'Últimas Noticias',
-            child: Column(
-              children: _noticias.map((noticia) {
-                return NewsCard(noticia: noticia);
-              }).toList(),
+          SingleChildScrollView(
+            child: Container(
+              height:  MediaQuery.of(context).size.height,
+              child: AsideSection(
+                title: 'Últimas Noticias',
+                child: Column(
+                  children: _noticias.map((noticia) {
+                    return NewsCard(noticia: noticia);
+                  }).toList(),
+                ),
+              ),
             ),
           ),
 
           // Suscripción
-          AsideSection(
+         /* AsideSection(
             title: 'Suscríbete',
             child: Column(
               children: [
@@ -61,7 +66,7 @@ class AsideWidget extends StatelessWidget {
                 ),
               ],
             ),
-          ),
+          ),*/
         ],
       ),
     );

@@ -9,6 +9,8 @@ class PublicacionCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      //height: MediaQuery.of(context).size.height * 0.2,
+      //width: ,
       decoration: BoxDecoration(
         border: Border.all(color: const Color(0xFFEEEEEE)),
         borderRadius: BorderRadius.circular(8),
@@ -40,6 +42,7 @@ class PublicacionCardWidget extends StatelessWidget {
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: Color(0xFF2c3e50),
+                      //fontFamily: 'NombreDeTuFuente',
                     ),
                   ),
                   const SizedBox(height: 8),

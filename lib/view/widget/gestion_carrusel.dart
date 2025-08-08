@@ -48,9 +48,9 @@ class _GestionCarouselState extends State<GestionCarousel> {
     return Stack(
       children: [
         Container(
-          color: const Color(0xFF2c3e50),
+         // color: const Color(0xFF2c3e50),
           padding: const EdgeInsets.symmetric(vertical: 48),
-          margin: const EdgeInsets.symmetric(vertical: 48),
+          //margin: const EdgeInsets.symmetric(vertical: 48),
           child: SizedBox(
             height: 400,
             child: Column(
@@ -126,10 +126,14 @@ class _GestionCarouselState extends State<GestionCarousel> {
                             Expanded(
                               child: Row(
                                 children: [
-                                  Image.network(
-                                    widget.items[index]['image'] ?? '',
-                                    fit: BoxFit.contain,
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(20), // Ajusta este valor para cambiar el radio de los bordes
+                                    child:  Image.network(
+                                      widget.items[index]['image'] ?? '',
+                                      fit: BoxFit.contain,
+                                    ),
                                   ),
+
                                   SizedBox(width: 40,),
                                   if (_currentIndex < widget.items.length - 1) ...[
                                     const Spacer(),
@@ -182,25 +186,6 @@ class _GestionCarouselState extends State<GestionCarousel> {
           ),
         ),
 
-        // Flecha Izquierda
-        /*if (_currentIndex > 0)
-          Align(
-            alignment: Alignment.centerLeft,
-            child: IconButton(
-              icon: const Icon(Icons.arrow_back_ios, size: 40, color: Colors.white),
-              onPressed: _previousPage,
-            ),
-          ),
-
-        // Flecha Derecha
-        if (_currentIndex < widget.items.length - 1)
-          Align(
-            alignment: Alignment.centerRight,
-            child: IconButton(
-              icon: const Icon(Icons.arrow_forward_ios, size: 40, color: Colors.white),
-              onPressed: _nextPage,
-            ),
-          ),*/
       ],
     );
   }

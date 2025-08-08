@@ -9,8 +9,8 @@ class AboutCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //height: MediaQuery.of(context).size.height * 0.05,
-      //width: MediaQuery.of(context).size.width * 0.05,
+      height: MediaQuery.of(context).size.height * 0.20,
+      width: MediaQuery.of(context).size.width * 0.20,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: const Color(0xFFecf0f1),
